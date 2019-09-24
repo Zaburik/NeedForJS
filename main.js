@@ -3,10 +3,12 @@ const score = document.querySelector(`.score`),
     gameArea = document.querySelector(`.gameArea`),
     car = document.createElement(`div`);
 car.classList.add(`car`);
+gameArea.classList.add(`hide`);
 
 start.addEventListener(`click`, startGame);
 document.addEventListener(`keydown`, startRun);
 document.addEventListener(`keyup`, stopRun);
+
 
 
 const keys = {
@@ -28,6 +30,7 @@ function getQuantityElements(heightElement) {
 
 
 function startGame(){
+    gameArea.classList.remove(`hide`);
     start.classList.add(`hide`);
     for(i = 0; i < 20; i++){
         const line = document.createElement(`div`);
