@@ -103,3 +103,28 @@ table {
    font-weight: 500;
    font-family: sans-serif;
 }
+.easy{
+    padding: 12px 20px;
+    background-color:green;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.medium{
+    padding: 12px 20px;
+    background-color:skyblue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hard{
+    padding: 12px 20px;
+    background-color:red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
