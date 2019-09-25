@@ -1,7 +1,10 @@
 const score = document.querySelector(`.score`),
     start = document.querySelector(`.start`),
     gameArea = document.querySelector(`.gameArea`),
-    car = document.createElement(`div`);
+    car = document.createElement(`div`),
+    easyLevel = document.querySelector(`.easy`),
+    mediumLevel = document.querySelector(`.medium`),
+    hardLevel = document.querySelector(`.hard`);
 car.classList.add(`car`);
 gameArea.classList.add(`hide`);
 
@@ -9,6 +12,19 @@ start.addEventListener(`click`, startGame);
 document.addEventListener(`keydown`, startRun);
 document.addEventListener(`keyup`, stopRun);
 
+easyLevel.addEventListener(`click`,function(){
+    setting.speed = 1;
+    setting.traffic = 8;
+});
+mediumLevel.addEventListener(`click`,function(){
+    setting.speed = 3;
+    serring.traffic = 3;
+
+});
+hardLevel.addEventListener(`click`,function(){
+    setting.speed = 5;
+    setting.traffic = 2;
+});
 
 
 const keys = {
@@ -133,4 +149,3 @@ function moveEnemy(){
        }
     });
 }
-
